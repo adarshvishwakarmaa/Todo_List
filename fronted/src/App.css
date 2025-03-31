@@ -1,0 +1,132 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #2D82B5, #00A9FF);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.home {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    width: 420px;
+    text-align: center;
+    color: white;
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Input & Button */
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.create input {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+.create input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.create button {
+    background: #ffaaba;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.create button:hover {
+    background: #e63950;
+}
+
+/* Task List */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.task:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Checkbox & Task Text */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.checkbox p {
+    font-size: 16px;
+    margin: 0;
+    color: white;
+}
+
+/* Completed Task */
+.line_thought {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Icons */
+.icon {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: blue;
+}
+
+.icon:hover {
+    color: #ff4f70;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .home {
+        width: 90%;
+    }
+}
